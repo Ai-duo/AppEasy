@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AppEasy</string>
+    <dimen name="paddingleft">50px</dimen>
+    <dimen name="paddingright">50px</dimen>
+    <dimen name="textsize">65px</dimen>
+    <dimen name="maxsize">75px</dimen>
+    <dimen name="iamgepaddingLeft">25px</dimen>
+    <dimen name="iamgepaddingRight">25px</dimen>
+</resources>
