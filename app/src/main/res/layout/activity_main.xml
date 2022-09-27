@@ -13,174 +13,11 @@
         android:id="@+id/time"
         android:layout_width="match_parent"
         android:layout_height="0px"
-        android:layout_weight="1"
+        android:layout_weight="1.3"
         android:gravity="center"
         android:text="2022年09月09日   周五   10:51"
         android:textColor="#FFF"
         android:textSize="75px" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0px"
-        android:layout_weight="0.2" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0px"
-        android:layout_marginLeft="@dimen/paddingright"
-        android:layout_marginRight="@dimen/paddingleft"
-        android:layout_weight="2"
-        android:background="@drawable/b1"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0px"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="温度"
-                android:textColor="#fff"
-                android:textSize="@dimen/textsize" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="0px"
-                android:layout_marginLeft="@dimen/iamgepaddingRight"
-                android:layout_marginTop="@dimen/iamgepaddingTop"
-                android:layout_marginRight="@dimen/iamgepaddingLeft"
-                android:layout_marginBottom="@dimen/iamgepaddingBottom"
-                android:layout_weight="1.2"
-                android:scaleType="fitXY"
-                android:src="@drawable/wd" />
-
-
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/wd"
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:gravity="center"
-            android:text="30℃"
-            android:textColor="#ff0"
-            android:textSize="@dimen/maxsize" />
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0px"
-        android:layout_weight="0.2" />
-
-    <LinearLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="0px"
-        android:layout_marginLeft="@dimen/paddingright"
-        android:layout_marginRight="@dimen/paddingleft"
-        android:layout_weight="2"
-        android:background="@drawable/b2"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0px"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="湿度"
-                android:textColor="#fff"
-                android:textSize="@dimen/textsize" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="0px"
-                android:layout_marginLeft="@dimen/iamgepaddingRight"
-                android:layout_marginTop="@dimen/iamgepaddingTop"
-                android:layout_marginRight="@dimen/iamgepaddingLeft"
-                android:layout_marginBottom="@dimen/iamgepaddingBottom"
-                android:layout_weight="1.2"
-                android:background="@drawable/sd"
-                android:scaleType="fitXY"
-                android:src="@drawable/sd" />
-
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/sd"
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:gravity="center"
-            android:text="75%"
-            android:textColor="#ff0"
-            android:textSize="@dimen/maxsize" />
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0px"
-        android:layout_weight="0.2" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0px"
-        android:layout_marginLeft="@dimen/paddingright"
-        android:layout_marginRight="@dimen/paddingleft"
-        android:layout_weight="2"
-        android:background="@drawable/b3"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0px"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="雨量"
-                android:textColor="#fff"
-                android:textSize="@dimen/textsize" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="0px"
-                android:layout_marginLeft="@dimen/iamgepaddingRight"
-                android:layout_marginTop="@dimen/iamgepaddingTop"
-                android:layout_marginRight="@dimen/iamgepaddingLeft"
-                android:layout_marginBottom="@dimen/iamgepaddingBottom"
-                android:layout_weight="1.2"
-                android:scaleType="fitXY"
-                android:src="@drawable/js" />
-
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/js"
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:gravity="center"
-            android:text="0mm"
-            android:textColor="#ff0"
-            android:textSize="@dimen/maxsize" />
-    </LinearLayout>
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0px"
@@ -237,7 +74,7 @@
                 android:gravity="center"
                 android:text="1级"
                 android:textColor="#ff0"
-                android:textSize="70px" />
+                android:textSize="80px" />
 
             <TextView
                 android:id="@+id/fs"
@@ -254,7 +91,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0px"
-        android:layout_weight="0.2" />
+        android:layout_weight="0.5" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -307,7 +144,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0px"
-        android:layout_weight="0.2" />
+        android:layout_weight="0.5" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -315,7 +152,7 @@
         android:layout_marginLeft="@dimen/paddingright"
         android:layout_marginRight="@dimen/paddingleft"
         android:layout_weight="2"
-        android:background="@drawable/b6"
+        android:background="@drawable/b1"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -329,12 +166,11 @@
                 android:layout_height="0px"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="气压"
+                android:text="温度"
                 android:textColor="#fff"
                 android:textSize="@dimen/textsize" />
 
             <ImageView
-
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_marginLeft="@dimen/iamgepaddingRight"
@@ -343,20 +179,82 @@
                 android:layout_marginBottom="@dimen/iamgepaddingBottom"
                 android:layout_weight="1.2"
                 android:scaleType="fitXY"
-                android:src="@drawable/qy" />
+                android:src="@drawable/wd" />
+
+
         </LinearLayout>
 
-
         <TextView
-            android:id="@+id/qy"
+            android:id="@+id/wd"
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text="1109hpa"
+            android:text="30℃"
             android:textColor="#ff0"
-            android:textSize="@dimen/otextsize" />
+            android:textSize="@dimen/maxsize" />
     </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.5" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginLeft="@dimen/paddingright"
+        android:layout_marginRight="@dimen/paddingleft"
+        android:layout_weight="2"
+        android:background="@drawable/b2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="湿度"
+                android:textColor="#fff"
+                android:textSize="@dimen/textsize" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_marginLeft="@dimen/iamgepaddingRight"
+                android:layout_marginTop="@dimen/iamgepaddingTop"
+                android:layout_marginRight="@dimen/iamgepaddingLeft"
+                android:layout_marginBottom="@dimen/iamgepaddingBottom"
+                android:layout_weight="1.2"
+                android:background="@drawable/sd"
+                android:scaleType="fitXY"
+                android:src="@drawable/sd" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sd"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="75%"
+            android:textColor="#ff0"
+            android:textSize="@dimen/maxsize" />
+    </LinearLayout>
+
+
+
+
+
+
 
     <TextView
         android:layout_width="match_parent"

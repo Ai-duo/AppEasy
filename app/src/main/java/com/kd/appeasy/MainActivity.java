@@ -40,10 +40,8 @@ public class MainActivity extends AppCompatActivity {
         time = findViewById(R.id.time);
         wd = findViewById(R.id.wd);
         sd = findViewById(R.id.sd);
-        js = findViewById(R.id.js);
         fx = findViewById(R.id.fx);
         fs = findViewById(R.id.fs);
-        qy = findViewById(R.id.qy);
         fsdj = findViewById(R.id.fsj);
         wea = findViewById(R.id.weatherinfo);
         wea.getPaint().setTypeface(fontFace);
@@ -53,10 +51,10 @@ public class MainActivity extends AppCompatActivity {
     public void getElement(Elements elements) {
         wd.setText(elements.wd);
         sd.setText(elements.sd);
-        js.setText(elements.js);
+
         fs.setText(elements.fs);
         fx.setText(elements.fx);
-        qy.setText(elements.qy);
+
         fsdj.setText(elements.fsdj);
     }
     @Subscribe(threadMode = ThreadMode.MAIN)

@@ -7,6 +7,6 @@
     <dimen name="maxsize">170px</dimen>
     <dimen name="iamgepaddingLeft">35px</dimen>
     <dimen name="iamgepaddingRight">35px</dimen>
-    <dimen name="iamgepaddingTop">1px</dimen>
-    <dimen name="iamgepaddingBottom">1px</dimen>
+    <dimen name="iamgepaddingTop">40px</dimen>
+    <dimen name="iamgepaddingBottom">40px</dimen>
 </resources>
