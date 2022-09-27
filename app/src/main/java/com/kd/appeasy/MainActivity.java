@@ -18,7 +18,7 @@ import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
     Typeface fontFace;
-    TextView time, wd, sd, js, fs, fx, qy;
+    TextView time, wd, sd, js, fs, fx, qy,fsdj;
     MarqueeView wea;
     String info = "金华市气象台2022年09月09日16时发布的天气预报：今天傍晚到夜里多云；明天多云；后天多云到阴。偏东风2～3级；明天早晨最低温度21～23℃，与今天相比偏低1～2℃，明天白天最高温度32～34℃，与今天相比基本持平，后天早晨最低温度20～22℃，后天白天最高温度31～33℃。";
     @Override
@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         fx = findViewById(R.id.fx);
         fs = findViewById(R.id.fs);
         qy = findViewById(R.id.qy);
+        fsdj = findViewById(R.id.fsj);
         wea = findViewById(R.id.weatherinfo);
         wea.getPaint().setTypeface(fontFace);
     }
@@ -56,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         fs.setText(elements.fs);
         fx.setText(elements.fx);
         qy.setText(elements.qy);
+        fsdj.setText(elements.fsdj);
     }
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void getWea(String weainfo) {

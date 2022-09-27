@@ -22,6 +22,7 @@ public class Elements {
     String wea;
     String bright;
     int index;
+
     public Elements(String date, String time, String wd, String sd, String fx, String fs, String js, String qy, String njd, String wea, String bright, int index) {
         this.date = date;
         this.time = time;
@@ -37,7 +38,7 @@ public class Elements {
         this.index = index;
 
     }
-
+   public String fsdj = "1级";
     public Elements(String wd, String sd, String fx, String fs, String js, String qy) {
         this.wd = wd + "℃";
         this.sd = sd + "%";
@@ -45,6 +46,11 @@ public class Elements {
         this.fs = fs + "m/s";
         this.js = js + "mm";
         this.qy = qy + "hPa";
+        float dj = Float.valueOf(fs);
+        if(dj>=1.5){
+           int d =  (int)Math.ceil(dj/1.5);
+          fsdj = d+"级";
+        }
     }
 
     @Override
