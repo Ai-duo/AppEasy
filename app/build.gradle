@@ -15,7 +15,14 @@ android {
         }
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    android.applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                outputFileName = "AppEasy_Six_v${defaultConfig.versionName}.apk"
+            }
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false

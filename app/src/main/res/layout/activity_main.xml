@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="1080px"
     android:layout_height="1920px"
-    android:background="@drawable/bbask"
+    android:background="@drawable/bbasko"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -17,7 +17,7 @@
         android:gravity="center"
         android:text="2022年09月09日   周五   10:51"
         android:textColor="#FFF"
-        android:textSize="@dimen/maxsize" />
+        android:textSize="75px" />
 
     <TextView
         android:layout_width="match_parent"
@@ -38,14 +38,16 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="@dimen/iamgepaddingRight"
             android:layout_marginRight="@dimen/iamgepaddingLeft"
-            android:layout_weight="2"
+            android:layout_marginTop="@dimen/iamgepaddingTop"
+            android:layout_marginBottom="@dimen/iamgepaddingBottom"
+            android:layout_weight="1.2"
             android:scaleType="fitXY"
             android:src="@drawable/wd" />
 
         <TextView
             android:layout_width="0px"
             android:layout_height="match_parent"
-            android:layout_weight="1.2"
+            android:layout_weight="1"
             android:gravity="center"
             android:text="温度"
             android:textColor="#fff"
@@ -55,7 +57,7 @@
             android:id="@+id/wd"
             android:layout_width="0px"
             android:layout_height="match_parent"
-            android:layout_weight="2.5"
+            android:layout_weight="2.7"
             android:gravity="center"
             android:text="30℃"
             android:textColor="#ff0"
@@ -82,7 +84,9 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="@dimen/iamgepaddingRight"
             android:layout_marginRight="@dimen/iamgepaddingLeft"
-            android:layout_weight="2"
+            android:layout_marginTop="@dimen/iamgepaddingTop"
+            android:layout_marginBottom="@dimen/iamgepaddingBottom"
+            android:layout_weight="1.2"
             android:background="@drawable/sd"
             android:scaleType="fitXY"
             android:src="@drawable/sd" />
@@ -90,7 +94,7 @@
         <TextView
             android:layout_width="0px"
             android:layout_height="match_parent"
-            android:layout_weight="1.2"
+            android:layout_weight="1"
             android:gravity="center"
             android:text="湿度"
             android:textColor="#fff"
@@ -100,7 +104,7 @@
             android:id="@+id/sd"
             android:layout_width="0px"
             android:layout_height="match_parent"
-            android:layout_weight="2.5"
+            android:layout_weight="2.7"
             android:gravity="center"
             android:text="75%"
             android:textColor="#ff0"
@@ -126,14 +130,16 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="@dimen/iamgepaddingRight"
             android:layout_marginRight="@dimen/iamgepaddingLeft"
-            android:layout_weight="2"
+            android:layout_marginTop="@dimen/iamgepaddingTop"
+            android:layout_marginBottom="@dimen/iamgepaddingBottom"
+            android:layout_weight="1.2"
             android:scaleType="fitXY"
             android:src="@drawable/js" />
 
         <TextView
             android:layout_width="0px"
             android:layout_height="match_parent"
-            android:layout_weight="1.2"
+            android:layout_weight="1"
             android:gravity="center"
             android:text="雨量"
             android:textColor="#fff"
@@ -143,7 +149,7 @@
             android:id="@+id/js"
             android:layout_width="0px"
             android:layout_height="match_parent"
-            android:layout_weight="2.5"
+            android:layout_weight="2.7"
             android:gravity="center"
             android:text="0mm"
             android:textColor="#ff0"
@@ -169,14 +175,16 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="@dimen/iamgepaddingRight"
             android:layout_marginRight="@dimen/iamgepaddingLeft"
-            android:layout_weight="2"
+            android:layout_marginTop="@dimen/iamgepaddingTop"
+            android:layout_marginBottom="@dimen/iamgepaddingBottom"
+            android:layout_weight="1.2"
             android:scaleType="fitXY"
             android:src="@drawable/fs" />
 
         <TextView
             android:layout_width="0px"
             android:layout_height="match_parent"
-            android:layout_weight="1.2"
+            android:layout_weight="1"
             android:gravity="center"
             android:text="风速"
             android:textColor="#fff"
@@ -186,7 +194,7 @@
             android:id="@+id/fs"
             android:layout_width="0px"
             android:layout_height="match_parent"
-            android:layout_weight="2.5"
+            android:layout_weight="2.7"
             android:gravity="center"
             android:text="2.4m/s"
             android:textColor="#ff0"
@@ -212,14 +220,16 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="@dimen/iamgepaddingRight"
             android:layout_marginRight="@dimen/iamgepaddingLeft"
-            android:layout_weight="2"
+            android:layout_marginTop="@dimen/iamgepaddingTop"
+            android:layout_marginBottom="@dimen/iamgepaddingBottom"
+            android:layout_weight="1.2"
             android:scaleType="fitXY"
             android:src="@drawable/fx" />
 
         <TextView
             android:layout_width="0px"
             android:layout_height="match_parent"
-            android:layout_weight="1.2"
+            android:layout_weight="1"
             android:gravity="center"
             android:text="风向"
             android:textColor="#fff"
@@ -229,7 +239,7 @@
             android:id="@+id/fx"
             android:layout_width="0px"
             android:layout_height="match_parent"
-            android:layout_weight="2.5"
+            android:layout_weight="2.7"
             android:gravity="center"
             android:text="东偏南风"
             android:textColor="#ff0"
@@ -256,14 +266,16 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="@dimen/iamgepaddingRight"
             android:layout_marginRight="@dimen/iamgepaddingLeft"
-            android:layout_weight="2"
+            android:layout_marginTop="@dimen/iamgepaddingTop"
+            android:layout_marginBottom="@dimen/iamgepaddingBottom"
+            android:layout_weight="1.2"
             android:scaleType="fitXY"
             android:src="@drawable/qy" />
 
         <TextView
             android:layout_width="0px"
             android:layout_height="match_parent"
-            android:layout_weight="1.2"
+            android:layout_weight="1"
             android:gravity="center"
             android:text="气压"
             android:textColor="#fff"
@@ -273,7 +285,7 @@
             android:id="@+id/qy"
             android:layout_width="0px"
             android:layout_height="match_parent"
-            android:layout_weight="2.5"
+            android:layout_weight="2.7"
             android:gravity="center"
             android:text="1109hpa"
             android:textColor="#ff0"
@@ -286,6 +298,7 @@
         android:layout_weight="0.2" />
 
     <com.kd.appeasy.MarqueeView
+        android:visibility="gone"
         android:id="@+id/weatherinfo"
         android:layout_width="match_parent"
         android:layout_height="0px"
