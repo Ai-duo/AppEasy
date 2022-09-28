@@ -22,7 +22,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0px"
-        android:layout_weight="0.2" />
+        android:layout_weight="0.1" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -76,7 +76,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0px"
-        android:layout_weight="0.2" />
+        android:layout_weight="0.1" />
 
     <LinearLayout
 
@@ -131,7 +131,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0px"
-        android:layout_weight="0.2" />
+        android:layout_weight="0.1" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -184,7 +184,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0px"
-        android:layout_weight="0.2" />
+        android:layout_weight="0.1" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -254,7 +254,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0px"
-        android:layout_weight="0.2" />
+        android:layout_weight="0.1" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -307,7 +307,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0px"
-        android:layout_weight="0.2" />
+        android:layout_weight="0.1" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -361,7 +361,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0px"
-        android:layout_weight="0.2" />
+        android:layout_weight="0.1" />
 
     <com.kd.appeasy.MarqueeView
         android:id="@+id/weatherinfo"
@@ -370,10 +370,9 @@
         android:layout_weight="1"
         android:background="@drawable/ybb"
         android:gravity="center"
-        android:visibility="gone"
         app:marqueeview_repet_type="repet_interval"
         app:marqueeview_text_color="#fff"
         app:marqueeview_text_distance="100"
         app:marqueeview_text_size="50"
-        app:marqueeview_text_speed="0.3" />
+        app:marqueeview_text_speed="0.4" />
 </LinearLayout>
