@@ -41,7 +41,7 @@ public class Elements {
    public String fsdj = "1级";
     public Elements(String wd, String sd, String fx, String fs, String js, String qy) {
         this.wd = wd + "℃";
-        this.sd = sd + "%";
+        this.sd = sd + "%RH";
         this.fx = fx;
         this.fs = fs + "m/s";
         this.js = js + "mm";
@@ -50,6 +50,8 @@ public class Elements {
         if(dj>=1.5){
            int d =  (int)Math.ceil(dj/1.5);
           fsdj = d+"级";
+        }else{
+            fsdj = "0";
         }
     }
 
