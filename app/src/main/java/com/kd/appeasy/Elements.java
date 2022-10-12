@@ -38,7 +38,7 @@ public class Elements {
         this.index = index;
 
     }
-   public String fsdj = "1级";
+    public String fsdj = "1级";
     public Elements(String wd, String sd, String fx, String fs, String js, String qy) {
         this.wd = wd + "℃";
         this.sd = sd + "%RH";
@@ -47,11 +47,32 @@ public class Elements {
         this.js = js + "mm";
         this.qy = qy + "hPa";
         float dj = Float.valueOf(fs);
-        if(dj>=1.5){
-           int d =  (int)Math.ceil(dj/1.5);
-          fsdj = d+"级";
-        }else{
-            fsdj = "0";
+        if(dj<=0.2){
+            fsdj = "";
+        }else if(dj<=1.5){
+            fsdj = 1+"级";
+        }else if(dj<=3.3){
+            fsdj = 2+"级";
+        }else if(dj<=5.4){
+            fsdj = 3+"级";
+        }else if(dj<=7.9){
+            fsdj = 4+"级";
+        }else if(dj<=10.7){
+            fsdj = 5+"级";
+        }else if(dj<=13.8){
+            fsdj = 6+"级";
+        }else if(dj<=117.1){
+            fsdj = 7+"级";
+        }else if(dj<=20.7){
+            fsdj = 8+"级";
+        }else if(dj<=24.4){
+            fsdj = 9+"级";
+        }else if(dj<=28.4){
+            fsdj =10+"级";
+        }else if(dj<=32.6){
+            fsdj = 11+"级";
+        }else if(dj<=36.9){
+            fsdj = 12+"级";
         }
     }
 
@@ -88,22 +109,22 @@ public class Elements {
     public int getbrightness11() {
         int x = 0xccccccff;
         if(!TextUtils.isEmpty(bright)){
-        if(Integer.valueOf(bright) == 1){ x = 0xbbbbbbff; }
-        if(Integer.valueOf(bright) == 2){ x = 0xddddddff; }
-        if(Integer.valueOf(bright) == 3){ x = 0xeeeeeeff; }
-        if(Integer.valueOf(bright) == 4){ x = 0xffffffff; }
+            if(Integer.valueOf(bright) == 1){ x = 0xbbbbbbff; }
+            if(Integer.valueOf(bright) == 2){ x = 0xddddddff; }
+            if(Integer.valueOf(bright) == 3){ x = 0xeeeeeeff; }
+            if(Integer.valueOf(bright) == 4){ x = 0xffffffff; }
         }
         return x;
     }
-   public String getElementWdAndYl(){
-       return "温度:"+ wd + "℃\n"
-               + "雨量:" + js + "mm\n";
-   }
+    public String getElementWdAndYl(){
+        return "温度:"+ wd + "℃\n"
+                + "雨量:" + js + "mm\n";
+    }
     public String getElementFsAndFx(){
         return
                 "风向:\n" + fx + "\n"
-                + "风速:" + fs + "m/s\n"
-               ;
+                        + "风速:" + fs + "m/s\n"
+                ;
     }
     public String getElementLeftText() {
         return "温度:"+ wd + "℃\n"
@@ -122,7 +143,7 @@ public class Elements {
     public String getYear () {
         Log.i("TAG","date:"+date);
 
-       // int week = calendar.get(Calendar.DAY_OF_WEEK);
+        // int week = calendar.get(Calendar.DAY_OF_WEEK);
         String[] date = this.date.split("-");
         String[] time2 = this.time.split(":");
 
@@ -130,29 +151,29 @@ public class Elements {
         if(cnt <= 10) {
             cnt++;
             if(cnt == 8){
-            int year1 = Integer.valueOf(date[0]);
-            int month1 = Integer.valueOf(date[1]) - 1;
-            int Day1 = Integer.valueOf(date[2]);
-            int hour1 = Integer.valueOf(time2[0]);
-            int minute1 = Integer.valueOf(time2[1]);
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-            Calendar c = Calendar.getInstance();
-            //System.out.println(sdf.format(c.getTime()));
-            c.set(Calendar.YEAR, year1);
-            c.set(Calendar.MONTH, month1);//从0开始，0表是1月，1表示2月依bai次类du推
-            c.set(Calendar.DAY_OF_MONTH, Day1);
-            c.set(Calendar.HOUR_OF_DAY, hour1);
-            c.set(Calendar.MINUTE, minute1);
-            c.set(Calendar.SECOND, 0);
-            Log.i("TAG_","系统时间校正====="+sdf.format(c.getTime()));}
+                int year1 = Integer.valueOf(date[0]);
+                int month1 = Integer.valueOf(date[1]) - 1;
+                int Day1 = Integer.valueOf(date[2]);
+                int hour1 = Integer.valueOf(time2[0]);
+                int minute1 = Integer.valueOf(time2[1]);
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                Calendar c = Calendar.getInstance();
+                //System.out.println(sdf.format(c.getTime()));
+                c.set(Calendar.YEAR, year1);
+                c.set(Calendar.MONTH, month1);//从0开始，0表是1月，1表示2月依bai次类du推
+                c.set(Calendar.DAY_OF_MONTH, Day1);
+                c.set(Calendar.HOUR_OF_DAY, hour1);
+                c.set(Calendar.MINUTE, minute1);
+                c.set(Calendar.SECOND, 0);
+                Log.i("TAG_","系统时间校正====="+sdf.format(c.getTime()));}
         }
 
 
-/*        Date  w = new Date(date[0]+"-"+date[1]+"-"+date[2]);*/
+        /*        Date  w = new Date(date[0]+"-"+date[1]+"-"+date[2]);*/
         String w = "";
         try{
             SimpleDateFormat ft = new SimpleDateFormat("yyyy-MM-dd");
-/*          String time = date[0]+"-"+date[1]+"-"+date[2];*/
+            /*          String time = date[0]+"-"+date[1]+"-"+date[2];*/
             String time1 = "";
             for(int i=0;i< date.length;i++){
                 if(i==date.length-1){
@@ -162,8 +183,8 @@ public class Elements {
                 }
             }
             // time1 = date[0]+"-"+date[1]+"-"+date[2];
-             Date date1 = ft.parse(time1);
-             w = getWeek(date1);
+            Date date1 = ft.parse(time1);
+            w = getWeek(date1);
         }catch(ParseException e){
             e.printStackTrace();
         }
