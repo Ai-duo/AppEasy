@@ -70,21 +70,21 @@
                 android:id="@+id/fsj"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
-                android:layout_weight="1.6"
+                android:layout_weight="3"
                 android:gravity="center"
-                android:text="1级"
+                android:text=""
                 android:textColor="#ff0"
-                android:textSize="80px" />
+                android:textSize="@dimen/otextsize" />
 
             <TextView
                 android:id="@+id/fs"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
-                android:layout_weight="3"
+                android:layout_weight="1.6"
                 android:gravity="center"
-                android:text="2.4m/s"
+                android:text=""
                 android:textColor="#ff0"
-                android:textSize="@dimen/otextsize" />
+                android:textSize="80px" />
         </LinearLayout>
     </LinearLayout>
 
@@ -136,7 +136,7 @@
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text="东偏南风"
+            android:text=""
             android:textColor="#ff0"
             android:textSize="@dimen/otextsize" />
     </LinearLayout>
@@ -190,7 +190,7 @@
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text="30℃"
+            android:text=""
             android:textColor="#ff0"
             android:textSize="@dimen/maxsize" />
     </LinearLayout>
@@ -245,7 +245,7 @@
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text="75%"
+            android:text=""
             android:textColor="#ff0"
             android:textSize="@dimen/maxsize" />
     </LinearLayout>

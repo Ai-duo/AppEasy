@@ -41,18 +41,40 @@ public class Elements {
    public String fsdj = "1级";
     public Elements(String wd, String sd, String fx, String fs, String js, String qy) {
         this.wd = wd + "℃";
-        this.sd = sd + "%";
+        this.sd = sd + "%RH";
         this.fx = fx;
         this.fs = fs + "m/s";
         this.js = js + "mm";
         this.qy = qy + "hPa";
         float dj = Float.valueOf(fs);
-        if(dj>=1.5){
-           int d =  (int)Math.ceil(dj/1.5);
-          fsdj = d+"级";
+        if (dj <= 0.2) {
+            fsdj = "";
+        } else if (dj <= 1.5) {
+            fsdj = 1 + "级";
+        } else if (dj <= 3.3) {
+            fsdj = 2 + "级";
+        } else if (dj <= 5.4) {
+            fsdj = 3 + "级";
+        } else if (dj <= 7.9) {
+            fsdj = 4 + "级";
+        } else if (dj <= 10.7) {
+            fsdj = 5 + "级";
+        } else if (dj <= 13.8) {
+            fsdj = 6 + "级";
+        } else if (dj <= 117.1) {
+            fsdj = 7 + "级";
+        } else if (dj <= 20.7) {
+            fsdj = 8 + "级";
+        } else if (dj <= 24.4) {
+            fsdj = 9 + "级";
+        } else if (dj <= 28.4) {
+            fsdj = 10 + "级";
+        } else if (dj <= 32.6) {
+            fsdj = 11 + "级";
+        } else if (dj <= 36.9) {
+            fsdj = 12 + "级";
         }
     }
-
     @Override
     public String toString() {
         return time + "\n"
