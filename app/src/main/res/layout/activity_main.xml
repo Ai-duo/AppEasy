@@ -264,6 +264,6 @@
         app:marqueeview_repet_type="repet_interval"
         app:marqueeview_text_color="#fff"
         app:marqueeview_text_distance="100"
-        app:marqueeview_text_size="50"
+        app:marqueeview_text_size="90"
         app:marqueeview_text_speed="0.3" />
 </LinearLayout>
