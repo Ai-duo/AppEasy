@@ -265,5 +265,5 @@
         app:marqueeview_text_color="#fff"
         app:marqueeview_text_distance="100"
         app:marqueeview_text_size="105"
-        app:marqueeview_text_speed="0.3" />
+        app:marqueeview_text_speed="1.5" />
 </LinearLayout>
